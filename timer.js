@@ -37,5 +37,17 @@ function stopTimer() {
     isStart = false;
   }
 }
+function resetTimer() {
+  if (isStart) {
+    clearInterval(interval);
+    isStart = false;
+  }
+  hours = 0;
+  minutes = 0;
+  seconds = 0;
+  updateDisplay();
+}
 startBtn.addEventListener("click", startTimer);
 stopBtn.addEventListener("click", stopTimer);
+resetBtn.addEventListener("click", resetTimer);
+updateDisplay();

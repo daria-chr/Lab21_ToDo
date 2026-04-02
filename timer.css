@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #c4f3e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgb(169, 222, 189);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  color: #45514c;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.timer-display {
+  font-size: 48px;
+  font-weight: bold;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #70895d;
+  letter-spacing: 4px;
+  border: 9px solid #a5d5b5; 
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.btn-start {
+  background: #3b8a3e;
+}
+
+.btn-start:hover {
+  background: #214f23;
+}
+
+.btn-stop {
+  background: #f44336;
+}
+
+.btn-stop:hover {
+  background: #da190b;
+}
+
+.btn-reset {
+  background: #d29a3a;
+}
+
+.btn-reset:hover {
+  background: #6a4e0c;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
